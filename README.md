@@ -1,11 +1,29 @@
-Rossmann store sales - kaggle
-==============================
+# Rossmann store sales - kaggle
 
 Some playing around with kaggle competition dealing with predictions on the sales of [Rossmann shops](https://www.kaggle.com/c/rossmann-store-sales/data).
 This project is derived from [ds-cookiecutter](https://github.com/drorata/ds-cookiecutter).
 
-Project Organization
-------------
+## Running docker container
+
+You can experiment with this analysis using the provided docker image.
+This can be done in two steps, first build the image:
+
+```bash
+docker build -t rossmann .
+```
+
+You can replace the name of the image as per your convenience.
+This step can take couple of minutes, depending on the machine you're using.
+Next, you can run the built image:
+
+```bash
+docker run -p 8899:8888 -it --rm rossmann
+```
+
+and visit on `localhost:8899`.
+The port `8899` can be replaced upon running the image.
+
+## Project Organization
 
     ├── LICENSE
     ├── README.md          <- The top-level README (this file)
